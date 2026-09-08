@@ -55,6 +55,24 @@ logs/           # App logs (gitignored)
 - Change the demo admin password for production
 - Prefer HTTPS in production (camera requires secure context)
 
+## Screenshots
+
+![Login](docs/screenshots/login.png)
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+![Scan Plate / Check-in](docs/screenshots/entry.png)
+
+![Exit / Payment](docs/screenshots/exit.png)
+
+![Check-in Records](docs/screenshots/records.png)
+
+![AI Settings](docs/screenshots/ai_settings.png)
+
+![Billing Settings](docs/screenshots/billing.png)
+
+![AI Logs](docs/screenshots/ai_logs.png)
+
 ## License
 
 MIT
