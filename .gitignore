@@ -1,0 +1,35 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Local runtime data (may contain API keys in settings table)
+/data/*.sqlite
+/data/*.sqlite-*
+/INSTALL_LOCK
+
+# Logs
+/logs/*.log
+/logs/app.log
+!/logs/.gitkeep
+!/data/.gitkeep
+!/data/.htaccess
+!/logs/.htaccess
+
+# Composer / vendor if added later
+/vendor/
+/node_modules/
+
+# PHPUnit / coverage
+/coverage/
+.phpunit.result.cache

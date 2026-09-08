@@ -1,0 +1,204 @@
+:root {
+  --park-bg: #0f172a;
+  --park-panel: #1e293b;
+  --park-accent: #0ea5e9;
+  --park-success: #22c55e;
+  --park-warning: #f59e0b;
+  --park-danger: #ef4444;
+  --park-text: #e2e8f0;
+  --park-muted: #94a3b8;
+}
+
+body.gate-page {
+  background: linear-gradient(160deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+  min-height: 100vh;
+  color: var(--park-text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.gate-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.gate-card {
+  background: rgba(30, 41, 59, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.gate-title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.gate-subtitle {
+  color: var(--park-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.camera-wrap {
+  position: relative;
+  background: #020617;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 2px solid rgba(14, 165, 233, 0.35);
+}
+
+.camera-wrap video,
+.camera-wrap canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camera-wrap canvas {
+  display: none;
+}
+
+.scan-frame {
+  position: absolute;
+  inset: 18% 12%;
+  border: 2px dashed rgba(14, 165, 233, 0.85);
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.status-box {
+  min-height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  margin-top: 1rem;
+}
+
+.status-box.info { border-color: rgba(14, 165, 233, 0.5); }
+.status-box.success { border-color: rgba(34, 197, 94, 0.6); color: #86efac; }
+.status-box.warning { border-color: rgba(245, 158, 11, 0.6); color: #fcd34d; }
+.status-box.danger { border-color: rgba(239, 68, 68, 0.6); color: #fca5a5; }
+
+.plate-display {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-family: ui-monospace, Consolas, monospace;
+  color: #7dd3fc;
+}
+
+.bill-grid dt { color: var(--park-muted); }
+.bill-grid dd { font-weight: 600; margin-bottom: 0.5rem; }
+
+.admin-body {
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.admin-sidebar a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  padding: 0.55rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.admin-sidebar a:hover,
+.admin-sidebar a.active {
+  background: rgba(14, 165, 233, 0.2);
+  color: #fff;
+}
+
+.stat-card {
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.stat-card .stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.gate-embed .camera-wrap {
+  position: relative;
+  background: #020617;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  max-width: 720px;
+  border: 2px solid rgba(14, 165, 233, 0.35);
+}
+
+.gate-embed .camera-wrap video,
+.gate-embed .camera-wrap canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gate-embed .camera-wrap canvas {
+  display: none;
+}
+
+.gate-embed .scan-frame {
+  position: absolute;
+  inset: 18% 12%;
+  border: 2px dashed rgba(14, 165, 233, 0.85);
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.gate-embed .plate-display {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-family: ui-monospace, Consolas, monospace;
+  color: #0369a1;
+}
+
+.gate-embed .status-box {
+  min-height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+}
+
+.gate-embed .status-box.info { border-color: #7dd3fc; }
+.gate-embed .status-box.success { border-color: #86efac; color: #166534; }
+.gate-embed .status-box.warning { border-color: #fcd34d; color: #92400e; }
+.gate-embed .status-box.danger { border-color: #fca5a5; color: #991b1b; }
+
+.amount-hero {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #67e8f9;
+  line-height: 1.1;
+}
+
+.amount-hero-light {
+  color: #0369a1;
+}
+
+@media (max-width: 768px) {
+  .admin-sidebar { min-height: auto; }
+  .plate-display { font-size: 1.35rem; }
+  .amount-hero { font-size: 2rem; }
+}
